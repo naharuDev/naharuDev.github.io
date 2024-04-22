@@ -14,7 +14,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
   <div class="bg-emerald-300 bg-opacity-10 z-20 overflow-hidden relative">
     <div class="w-40 h-40 rounded-full bg-emerald-100 object-center m-10 absolute filter blur-xl -z-10"></div> 
-    <div class="w-40 h-40 rounded-full bg-emerald-100 object-center m-10 absolute filter blur-xl -z-10"> 
     <section class="px-10 pt-2 ">
       <div class="bg-emerald-50 h-1 sm:m-2 rounded-sm"></div>
       <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-left px-15 lg:mx-20">LET'S COLABORATE<br> AND MAKE <br> SOMETHING GREAT</h1>
