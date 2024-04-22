@@ -24,6 +24,10 @@
     margin: 0 auto;
   }
 
+  .card{
+    @apply bg-lime-50 h-10
+  }
+
   .logo {
     height: 6em;
     padding: 1.5em;

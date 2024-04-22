@@ -1,3 +1,5 @@
+import { transform } from 'typescript';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -12,21 +14,18 @@ export default {
       keyframes: {
         fadeout: {
           '0%' : {
+            opacity: 0,
+          },
+          '10%' : {
+            opacity: 0,
+          },
+          '20%': {
             opacity: 1,
           },
-          '2%' : {
+          '30%': {
             opacity: 0,
           },
-          '3%' : {
-            opacity: 0,
-          },
-          '5%' : {
-            opacity: 1,
-          },
-          '8%': {
-            opacity: 0,
-          },
-          '98%':{
+          '100%':{
             opacity: 0,
           }
         },
