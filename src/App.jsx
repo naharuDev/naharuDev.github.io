@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import logo from '/logo.svg'
 import LineImage from './assets/Coffee Line.png'
 import ImgTeaRender from './assets/Coffee.png'
 import videoTea from '/0001-0250.mp4'
 import videoDasom from '/hadiah dasom.mp4'
+import geckoGif from '/gecko.gif'
+import shitGif from '/shit.gif'
+import MonsCareVid from '/2024-05-02 03-24-08.mp4'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,8 +32,6 @@ function App() {
   return (
       <div className=' text-white bg-teal-950 overflow-hidden relative'>
 
-        
-        
         <div className='h-auto w-full relative'>
           <div className='bg-cover bg-center w-full h-full absolute animate-fade' style={{ backgroundImage: "url(" + LineImage + ")" }}></div>
           <div className='px-10 text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-extrabold py-10 text-right sm:text-center bg-cover bg-center bg-clip-text text-transparent animate-skew' style={{ backgroundImage: "url(" + LineImage + ")" }}>
@@ -50,13 +51,26 @@ function App() {
 
         <section className='px-10 pt-2 pb-6 '>
           <div className='bg-emerald-50 h-1 sm:m-2 rounded-sm '></div>
-          <h1 className='p-10 py-5 text-3xl text-center'>Game Development</h1>
+          <h1 className='p-10 py-5 text-4xl text-center'>Game Development</h1>
+          <h1 className='p-10 py-5 text-3xl text-Left'>MonsCare</h1>
           <div className='flex flex-col  h-full w-full'>
-            <div className='rounded-xl bg-black overflow-hidden my-4 mx-4 h-52 sm:h-72 md:h-96 bg-contain bg-no-repeat bg-center ' style={{backgroundImage:'url('+ImgTeaRender+')'}} />
-            <div className='rounded-xl  bg-black overflow-hidden my-4 mx-4 h-52 sm:h-72 md:h-96'>
+            <div className='rounded-xl bg-black overflow-hidden my-4 mx-4 h-52 sm:h-72 md:h-96'>
+            <video className="h-full w-full" controls>
+                <source src={MonsCareVid} type="video/mp4" />
+                  Your browser does not support the video tag.
+              </video>
+              </div>
+              <p className='text-justify px-10 pb-20'>
+                This is my old Augmented Reality project in campus, I called MonsCare. This AR game is about taking care of a Monster. Recently, I rewrite the AI behavior, add new mechanic, 
+                new animation, new shader, new texture, new icon, and add some sound effect. I have plan to add more functionality in the future.
+                <a href='https://youtu.be/UY-Cx9dtFVo' className=' text-blue-300 underline'>Click here</a> to see the full video run through and 
+                <a href='https://youtu.be/Oh9vdGPKYIk' className=' text-blue-300 underline'>Click here</a> for my old one.
+              </p>
+            
+            <div className='rounded-xl  bg-black overflow-hidden my-4 mx-4 h-52 sm:h-72 md:h-96 bg-contain bg-no-repeat bg-center' style={{backgroundImage:'url('+geckoGif+')'}}>
               
             </div>
-            <div className='rounded-xl  bg-black overflow-hidden my-4 mx-4 h-52 sm:h-72 md:h-96'>
+            <div className='rounded-xl  bg-black overflow-hidden my-4 mx-4 h-52 sm:h-72 md:h-96 bg-contain bg-no-repeat bg-center' style={{backgroundImage:'url('+shitGif+')'}}>
               
             </div>
           </div>
@@ -68,12 +82,11 @@ function App() {
           <h1 className="px-10 py-5 text-3xl text-center">My Artworks</h1>
           <div className='flex flex-col h-full w-full'>
             <div className='rounded-xl bg-black overflow-hidden my-4 mx-4 h-52 sm:h-72 md:h-96 bg-contain bg-no-repeat bg-center ' style={{backgroundImage:'url('+ImgTeaRender+')'}} />
-            
             <p className='text-justify px-10 pb-20'>A simple scene that I created in Blender3D. I use this artwork as a background text of my name, as you can see in the top of this page.
             </p>
 
             <div className='rounded-xl  bg-black overflow-hidden my-4 mx-4 h-52 sm:h-72 md:h-96'>
-              <video className="h-full w-full" autoPlay loop>
+              <video className="h-full w-full" autoPlay controls loop>
                 <source src={videoTea} type="video/mp4" />
                   Your browser does not support the video tag.
               </video>
@@ -82,7 +95,7 @@ function App() {
               <a href='https://youtu.be/O7fe0wh28ck' className=' text-blue-300 underline'>Click here</a> to go to my youtube video. 
             </p>
             <div className='rounded-xl  bg-black overflow-hidden my-4 mx-4 h-52 sm:h-72 md:h-96'>
-              <video className="h-full w-full" controls loop>
+              <video className="h-full w-full" controls>
                 <source src={videoDasom} type="video/mp4" />
                   Your browser does not support the video tag.
               </video>
