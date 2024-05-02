@@ -33,17 +33,26 @@ function App() {
       <div className=' text-white bg-teal-950 overflow-hidden relative'>
         
         <div className='w-full h-20 bg-black z-10'>
-
         </div>
-        
+
+        <div className='w-screen h-screen fixed '>
+          <div className='mx-auto w-1/2'>
+            <div className='w-96 h-96 rounded-full bg-sky-400 opacity-40 m-auto fixed filter blur-3xl animate-moveabit '></div>
+            <div className='w-96 h-96 rounded-full bg-yellow-300 opacity-30 m-auto filter blur-3xl animate-moveabit '></div>
+          
+          </div>
+        </div>
+
+
         <div className='h-auto w-full relative'>
           <div className='bg-cover bg-center w-full h-full absolute animate-fade' style={{ backgroundImage: "url(" + LineImage + ")" }}></div>
           <div className='px-10 text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-extrabold py-10 text-right sm:text-center bg-cover bg-center bg-clip-text text-transparent animate-skew' style={{ backgroundImage: "url(" + LineImage + ")" }}>
             AHMAD<br />FADLI<br />NAHARU<br />
           </div>
         </div>
-        <div className='w-96 h-96 rounded-full bg-emerald-400 m-auto object-center fixed filter blur-3xl animate-moveabit '></div>
+
         
+
         
         
         <div className='space-y-4 max-w-3xl mx-auto relative'>
