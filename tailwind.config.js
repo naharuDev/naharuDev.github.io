@@ -12,18 +12,18 @@ export default {
       animation:{
         fade : 'fadeout 20s infinite',
         skew : 'skew 20s infinite',
-        moveabit : 'moveabit 3s infinite'
+        moveabit : 'moveabit 30s infinite'
       },
       keyframes: {
         moveabit :{
           '0%, 100%' : {
-            transform: 'translate(0%,0%)',
+            transform: 'translate(50%,20%)',
           },
-          '20%' : {
-            transform: 'translate(10%,5%)',
+          '33%' : {
+            transform: 'translate(10%,70%)',
           },
-          '40%' : {
-            transform: 'translate(25%,10%)',
+          '66%' : {
+            transform: 'translate(70%,50%)',
           },
         },
         skew : {
