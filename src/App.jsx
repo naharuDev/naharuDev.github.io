@@ -8,6 +8,7 @@ import videoDasom from '/hadiah dasom.mp4'
 import geckoGif from '/gecko.gif'
 import shitGif from '/shit.gif'
 import MonsCareVid from '/2024-05-02 03-24-08.mp4'
+import resume from '/resume.pdf'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,15 +31,13 @@ function App() {
     )
   }
   return (
-      <div className=' text-white bg-teal-950 overflow-hidden relative'>
-        
-        <div className='w-full h-20 bg-black z-10'>
-        </div>
-
+    <>
+      <div className=' text-white bg-teal-950 overflow-hidden relative z-[0]'>
         <div className='w-screen h-screen fixed '>
-          <div className='mx-auto w-1/2'>
-            <div className='w-96 h-96 rounded-full bg-sky-400 opacity-40 m-auto fixed filter blur-3xl animate-moveabit '></div>
-            <div className='w-96 h-96 rounded-full bg-yellow-300 opacity-30 m-auto filter blur-3xl animate-moveabit '></div>
+          <div className='mx-auto w-1/2 bg-black relative'>
+            <div className='w-[600px] h-[600px] rounded-full bg-sky-400 opacity-50 m-auto absolute -left-52 filter blur-3xl animate-moveabit '></div>
+            <div className='w-[300px] h-[300px] rounded-full bg-green-300 opacity-30 m-auto absolute left-2 filter blur-3xl animate-moveabit '></div>
+            <div className='w-[500px] h-[500px] rounded-full bg-yellow-300 opacity-50 m-auto absolute -right-50 filter blur-3xl animate-moveabit '></div>
           
           </div>
         </div>
@@ -77,19 +76,27 @@ function App() {
               <p className='text-justify px-10 pb-20'>
                 This is my old Augmented Reality project which I created when I was in Campus back in 2019, It is called MonsCare. This AR game is about taking care of a Monster. 
                 Recently, I rewrite the AI behavior, add new mechanics, new animations, new shaders, new textures, new icons, and add some sound effects. I have a plan to add more functionalities in the future.
-                <a href='https://youtu.be/UY-Cx9dtFVo' className=' text-blue-300 underline'>Click here</a> to see the run-through gameplay video and 
-                <a href='https://youtu.be/Oh9vdGPKYIk' className=' text-blue-300 underline'>Click here</a> for my old one.
+              <br/>
+              <div className='text-right'>
+                <a href='https://youtu.be/UY-Cx9dtFVo' className= 'bg-emerald-600 rounded-lg my-5 px-3 py-1 hover:bg-emerald-500 outline outline-offset-2 outline-1 z-50'>full run-through video</a>
+                <div className=' w-full h-4'/>
+                <a href='https://youtu.be/Oh9vdGPKYIk' className= 'bg-emerald-600 rounded-lg my-5 px-3 py-1 hover:bg-emerald-500 outline outline-offset-2 outline-1'>old gameplay video</a>
+              </div>
+              
+
               </p>
+              
+                
             
             <div className='rounded-xl  bg-black overflow-hidden my-4 mx-4 h-52 sm:h-72 md:h-96 bg-contain bg-no-repeat bg-center' style={{backgroundImage:'url('+geckoGif+')'}}>   
             </div>
               <p className='text-justify px-10 pb-20'>
-                This is a monster that I use in the game project. its model, texture and animation and basicly every 3D assets was made in Blender 3D and exported to Unity. 
+                This is a monster model that I use in this AR game project. its model, texture and animation and basicly every 3D assets was made in Blender 3D and exported to Unity. 
               </p>
             <div className='rounded-xl  bg-black overflow-hidden my-4 mx-4 h-52 sm:h-72 md:h-96 bg-contain bg-no-repeat bg-center' style={{backgroundImage:'url('+shitGif+')'}}>
             </div>
             <p className='text-justify px-10 pb-20'>
-                I created this smoke like smell and flying flies visual effect by moving its UV coordinate. I achieved that by creating a custom shader in Unity.
+                I created a stink visual effect and flying flies visual effect by moving its UV coordinate. I achieved that by creating a custom shader in Unity.
             </p>
           </div>
           
@@ -109,28 +116,50 @@ function App() {
                   Your browser does not support the video tag.
               </video>
             </div>
-            <p className='text-justify px-10 pb-20'>This is an seamless loop animation that I create for my one hour loop Song on Youtube. It is called Tea at my Backyard. 
-              <a href='https://youtu.be/O7fe0wh28ck' className=' text-blue-300 underline'>Click here</a> to go to my youtube video. 
+            <p className='text-justify px-10 pb-20'>This is a seamless loop animation that I created for my one hour loop Song on Youtube. It is called Tea at my Backyard. 
+              <div className='text-right'>
+                <a href='https://youtu.be/O7fe0wh28ck' className= 'bg-emerald-600 rounded-lg my-5 px-3 py-1 hover:bg-emerald-500 outline outline-offset-2 outline-1'>Tea at my Backyard video</a>
+                <div className=' w-full h-2 md:collapse'/>
+              </div>
             </p>
+            
             <div className='rounded-xl  bg-black overflow-hidden my-4 mx-4 h-52 sm:h-72 md:h-96'>
               <video className="h-full w-full" controls>
                 <source src={videoDasom} type="video/mp4" />
                   Your browser does not support the video tag.
               </video>
             </div>
-            <p className='text-justify px-10 pb-20'>This animation was a gift for my friend's birthday, I made a spelling mistake but my friend said that it's better because it makes the cat has a kind of childlike vibe. </p>          
+            <p className='text-justify px-10 pb-20'>This animation was a gift for my friend's birthday, I made a spelling mistake but my friend said that it's better because it makes the cat has some kind of childlike vibe. </p>          
             </div>
         </section>
 
-        <section className='px-10 pt-2 pb-6 bg-black'>
-          <div className='bg-emerald-50 h-1 sm:m-2 rounded-sm '></div>
-          <h1 className='p-10 py-5 text-3xl'> </h1>
-          <div className=''></div>
-        </section>
+        
 
         
         </div>
     </div>
+    
+    <div className='w-full bg-black py-5 relative z-10'>
+      {
+        //<div className='bg-emerald-50 h-1 sm:m-2 rounded-sm '></div>
+      }
+      <div className='space-y-4 max-w-5xl mx-auto py-2  text-white  '>
+        <section className='grid grid-cols-2 gap-4'>
+          <div className='mx-10 text-left'>
+            <p className='text-2xl'>contact <br/> </p>
+            email<br/> <a href='mailto:fadlinaharu96@gmail.com' className=''> fadlinaharu96@gmail.com </a> <br/>
+            instagram <br/> <a href='https://ig.me/m/ahmad_fadli96' className=''> @ahmad_fadli96 </a>
+            <br/><br/>
+            <p className='text-2xl'>download <br/> </p>
+            <a href={resume} className='' download> resume </a>
+          </div>
+          <div className='mx-10 text-right'>
+          </div>
+          
+        </section>
+      </div>
+    </div>
+  </>
   )
 
 }
